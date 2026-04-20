@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jemaat KINGMI Zaitun APO – Sistem Informasi Pelayanan Jemaat</title>
+  <meta name="description" content="Sistem Informasi Pelayanan Jemaat Gereja Kemah Injil Indonesia (KINGMI) Zaitun di Tanah Papua, Kota Jayapura." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome 6 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg" id="mainNavbar">
+  <div class="container">
+    <a class="navbar-brand" href="#" data-goto="beranda">
+      <img src="logo.png"" alt="Logo KINGMI Zaitun APO" id="navLogo" />
+      <div class="brand-text">
+        <span class="brand-main">KINGMI Zaitun APO</span>
+        <span class="brand-sub">Sistem Informasi Pelayanan Jemaat </span>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-page="beranda"><i class="fas fa-home me-1"></i>Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-page="info"><i class="fas fa-info-circle me-1"></i>Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-page="yakin"><i class="fas fa-building me-1"></i>YAKIN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-page="koperasi"><i class="fas fa-handshake me-1"></i>Koperasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-page="kontak"><i class="fas fa-envelope me-1"></i>Kontak</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn-theme" id="themeToggle" title="Ganti Tema">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: BERANDA
+════════════════════════════════════════════════════════════ -->
+<div class="page-section" id="beranda">
+
+  <!-- Hero -->
+  <section id="hero-section">
+    <div class="hero-bg-pattern"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center hero-content">
+          <div class="hero-logo mb-4">
+            <img src="logo.png" alt="Logo KINGMI Zaitun" class="img-fluid" style="max-width: 160px; filter: drop-shadow(0 4px 20px rgba(255,215,0,0.5));" />
+          </div>
+          <p class="hero-keterangan"><i class="fas fa-cross me-2"></i>Gereja Kemah Injil (KINGMI) di Tanah Papua</p>
+          <h1 class="hero-judul">KINGMI Zaitun<br/> APO Kota Jayapura</h1>
+          <div class="hero-divider"></div>
+          <p class="hero-subjudul">
+            Berakar, Bertumbuh dan Berbuah bagi Kristus.
+          </p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+            <a href="#" class="btn-hero-primary" data-goto="info">
+              <i class="fas fa-book-open me-2"></i>Informasi Jemaat
+            </a>
+            <a href="#" class="btn-hero-outline" data-goto="kontak">
+              <i class="fas fa-phone me-2"></i>Hubungi Kami
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stat Bar -->
+  <div class="stat-bar">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <span class="stat-number" data-target="290" data-suffix="+">0</span>
+            <span class="stat-label"><i class="fas fa-users me-1"></i>Anggota Jemaat</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <span class="stat-number" data-target="4" data-suffix="">0</span>
+            <span class="stat-label"><i class="fas fa-church me-1"></i>Komisi Pelayanan</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <span class="stat-number" data-target="4" data-suffix="">0</span>
+            <span class="stat-label"><i class="fas fa-praying-hands me-1"></i>Hamba Tuhan</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <span class="stat-number" data-target="2006" data-suffix="">0</span>
+            <span class="stat-label"><i class="fas fa-calendar me-1"></i>Tahun Berdiri</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pelayanan Unggulan -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-star me-2"></i>Pelayanan Kami</span>
+        <h2 class="section-title">Program Pelayanan Jemaat</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-bible"></i></div>
+              <h5>Ibadah Minggu</h5>
+              <p>Ibadah raya setiap hari Minggu pukul 08.00 dan 17.00 WITA. Membawa firman Tuhan yang segar bagi seluruh jemaat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-child"></i></div>
+              <h5>Sekolah Minggu</h5>
+              <p>Pendidikan iman dan karakter Kristiani untuk anak-anak usia dini hingga remaja dengan pengajaran yang menarik.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-hands-helping"></i></div>
+              <h5>Pelayanan Sosial</h5>
+              <p>Bakti sosial, beasiswa, dan bantuan kepada masyarakat sekitar sebagai wujud kasih nyata Gereja.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-music"></i></div>
+              <h5>Tim Pujian & Worship</h5>
+              <p>Pelayanan pujian dan penyembahan yang memimpin jemaat ke hadirat Tuhan dalam setiap ibadah.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Berita Terkini -->
+  <section class="section-wrapper" style="background:#fff;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-newspaper me-2"></i>Terkini</span>
+        <h2 class="section-title">Berita & Pengumuman</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="berita-card">
+            <img src="https://placehold.co/600x400" alt="berita" />
+            <div class="berita-body">
+              <span class="berita-tag">Ibadah</span>
+              <h6>Kebaktian Paskah 2025 – Kebangkitan yang Membawa Pengharapan</h6>
+              <p>Seluruh jemaat diundang untuk hadir dalam perayaan Paskah bersama yang penuh sukacita dan ucapan syukur.</p>
+              <div class="berita-meta"><i class="fas fa-calendar-alt"></i>20 April 2025</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="berita-card">
+            <img src="https://placehold.co/600x400" alt="berita" />
+            <div class="berita-body">
+              <span class="berita-tag">Sosial</span>
+              <h6>Program Beasiswa YAKIN untuk Mahasiswa Papua 2025</h6>
+              <p>Yayasan YAKIN membuka pendaftaran beasiswa bagi mahasiswa berprestasi dari keluarga tidak mampu di Papua.</p>
+              <div class="berita-meta"><i class="fas fa-calendar-alt"></i>15 April 2025</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="berita-card">
+            <img src="https://placehold.co/600x400" alt="berita" />
+            <div class="berita-body">
+              <span class="berita-tag">Koperasi</span>
+              <h6>Rapat Anggota Tahunan KSU Kingmi Zaitun Bertumbuh 2025</h6>
+              <p>RAT KSU dilaksanakan pada bulan Maret 2025 dengan pembagian Sisa Hasil Usaha kepada seluruh anggota koperasi.</p>
+              <div class="berita-meta"><i class="fas fa-calendar-alt"></i>10 April 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jadwal Ibadah -->
+  <section class="section-wrapper dark">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-clock me-2"></i>Jadwal</span>
+        <h2 class="section-title" style="color:var(--emas)">Jadwal Ibadah Rutin</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="table-responsive jadwal-table">
+            <table class="table table-hover mb-0">
+              <thead>
+                <tr>
+                  <th><i class="fas fa-calendar-day me-2"></i>Hari</th>
+                  <th><i class="fas fa-clock me-2"></i>Waktu</th>
+                  <th><i class="fas fa-pray me-2"></i>Jenis Ibadah</th>
+                  <th><i class="fas fa-map-marker-alt me-2"></i>Tempat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="badge-hari">Minggu</span></td>
+                  <td>09.00 – Selesai WP</td>
+                  <td>Ibadah Raya Pagi</td>
+                  <td>Gedung Gereja Utama</td>
+                </tr>
+                <tr>
+                  <td><span class="badge-hari">Minggu</span></td>
+                  <td>10.00 – 11.30 WITA</td>
+                  <td>Sekolah Minggu</td>
+                  <td>Ruang Anak dan Pemuda</td>
+                </tr>
+                <tr>
+                  <td><span class="badge-hari">Minggu</span></td>
+                  <td>15.00 – Selesai WP</td>
+                  <td>Ibadah Rutinitas Sore</td>
+                  <td>Tempat disesuaikan jadwal</td>
+                </tr>
+                <tr>
+                  <td><span class="badge-hari">Senin</span></td>
+                  <td>16.00 – Selesai WP</td>
+                  <td>Ibadah Rutinitas Pel. Perempuan</td>
+                  <td>Tempat disesuaikan jadwal</td>
+                </tr>
+                 <tr>
+                  <td><span class="badge-hari">Selasa</span></td>
+                  <td>17.30 – Selesai WP</td>
+                  <td>Ibadah Sore (Doa Bersama)</td>
+                  <td>Gedung Gereja Utama</td>
+                </tr>
+                <tr>
+                  <td><span class="badge-hari">Kamis</span></td>
+                  <td>15.00 – 16.30 WP</td>
+                  <td>Ibadah  &amp; Kelarga</td>
+                  <td>Tempat disesuaikan jadwal</td>
+                </tr>
+                <tr>
+                  <td><span class="badge-hari">Sabtu</span></td>
+                  <td>17.00 – 18.00 WP</td>
+                  <td>Rapat Majelis</td>
+                  <td>Ruang Rapat</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /beranda -->
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: INFO
+════════════════════════════════════════════════════════════ -->
+<div class="page-section" id="info">
+
+  <div class="unit-hero">
+    <div class="container text-center">
+      <p style="color:var(--emas-gelap);font-family:'Cinzel',serif;letter-spacing:3px;font-size:.8rem;text-transform:uppercase;margin-bottom:.5rem;position:relative;z-index:1;">
+        <i class="fas fa-info-circle me-2"></i>Informasi Gereja
+      </p>
+      <h1>Tentang KINGMI Zaitun APO</h1>
+      <p class="mt-2">Profil, Sejarah, Visi &amp; Misi, serta Struktur Organisasi Gereja</p>
+    </div>
+  </div>
+
+  <!-- Profil Singkat -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-5 text-center">
+          <img src="logo.png" alt="Profil Gereja" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-lg-7">
+          <span class="section-badge"><i class="fas fa-church me-2"></i>Profil Gereja</span>
+          <h2 class="section-title mt-2">Gereja Kemah Injil Indonesia</h2>
+          <div class="section-underline" style="margin-left:0;"></div>
+          <div class="info-highlight">
+            <h6><i class="fas fa-map-marker-alt me-2" style="color:var(--merah)"></i>Nama Jemaat</h6>
+            <p class="warna-ini"> KINGMI Zaitun APO, Klasis Kota Jayapura, Papua</p>
+          </div>
+          <div class="info-highlight">
+            <h6><i class="fas fa-calendar me-2" style="color:var(--merah)"></i>Tahun Berdiri</h6>
+            <p>Didirikan pada tahun 2006 oleh para Penatua dan hamba Tuhan di APO Kali</p>
+          </div>
+          <div class="info-highlight">
+            <h6><i class="fas fa-users me-2" style="color:var(--merah)"></i>Denominasi</h6>
+            <p>Anggota Persekutuan Gereja-Gereja di Indonesia (PGI) · Aliran Injili / Evangelical</p>
+          </div>
+          <div class="info-highlight">
+            <h6><i class="fas fa-location-dot me-2" style="color:var(--merah)"></i>Alamat</h6>
+            <p>Jl. Kabupaten 2 APO Gudang Keselamatan No. 1, Jayapura Utara, Kota Jayapura, Papua 99351</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visi Misi -->
+  <section class="section-wrapper dark">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-eye me-2"></i>Arah Pelayanan</span>
+        <h2 class="section-title">Visi &amp; Misi Gereja</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="visi-box">
+            <h4><i class="fas fa-eye me-2"></i>Visi</h4>
+            <p>Berakar, Bertumbuh dan Berbuah bagi Kristus.</p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <h4 style="font-family:'Cinzel',serif;color:var(--emas);margin-bottom:1.5rem;"><i class="fas fa-bullseye me-2"></i>Misi</h4>
+          <div class="misi-item">
+            <div class="misi-num">1</div>
+            <p>Memberitakan Injil Kerajaan Allah kepada semua orang di Tanah Papua dan menjangkau jiwa-jiwa bagi Kristus.</p>
+          </div>
+          <div class="misi-item">
+            <div class="misi-num">2</div>
+            <p>Membimbing jemaat bertumbuh dalam pengenalan akan Tuhan melalui firman, doa, dan persekutuan yang hidup.</p>
+          </div>
+          <div class="misi-item">
+            <div class="misi-num">3</div>
+            <p>Mengembangkan pelayanan sosial, pendidikan, dan ekonomi untuk meningkatkan kesejahteraan masyarakat Papua.</p>
+          </div>
+          <div class="misi-item">
+            <div class="misi-num">4</div>
+            <p>Membangun generasi muda Kristen yang tangguh, berkarakter, dan berdaya saing global.</p>
+          </div>
+          <div class="misi-item">
+            <div class="misi-num">5</div>
+            <p>Mengelola badan usaha gereja (YAKIN &amp; KSU) untuk menopang pelayanan dan memberdayakan ekonomi jemaat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Struktur Organisasi -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-sitemap me-2"></i>Struktur</span>
+        <h2 class="section-title">Struktur Organisasi Gereja</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="card-kingmi text-center">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <img src="pdt.jpg" alt="Gembala" style="width:90px;height:90px;object-fit:cover;border-radius:50%;border:4px solid var(--merah);margin-bottom:1rem;" />
+              <h5>Pdt. Daniel Pekei, S.Th</h5>
+              <p style="color:var(--merah);font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:1px;">GEMBALA JEMAAT</p>
+              <p>Memimpin pelayanan rohani dan administrasi jemaat KINGMI Zaitun Jayapura.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-kingmi text-center">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <img src="nas.jpg" alt="Majelis" style="width:90px;height:90px;object-fit:cover;border-radius:50%;border:4px solid var(--emas-gelap);margin-bottom:1rem;" />
+              <h5>Bpk. Nason Uti, SE.,MM.</h5>
+              <p style="color:var(--merah);font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:1px;">KETUA MAJELIS</p>
+              <p>Memimpin dewan majelis dan koordinasi pelayanan bidang administrasi gereja.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-kingmi text-center">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <img src="sem.jpg" alt="Sekretaris" style="width:90px;height:90px;object-fit:cover;border-radius:50%;border:4px solid var(--emas-gelap);margin-bottom:1rem;" />
+              <h5>Bpk. Semuel Edowai, SE.,M.Si</h5>
+              <p style="color:var(--merah);font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:1px;">SEKRETARIS JEMAAT</p>
+              <p>Mengelola administrasi, data keanggotaan, dan surat-menyurat gereja.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fasilitas -->
+  <section class="section-wrapper" style="background:#fff;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-building me-2"></i>Fasilitas</span>
+        <h2 class="section-title">Sarana &amp; Prasarana</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="text-center p-3">
+            <div class="card-icon-wrap mx-auto mb-2"><i class="fas fa-church"></i></div>
+            <p style="font-size:.85rem;font-weight:700;color:var(--merah-gelap);">Gedung Gereja</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="text-center p-3">
+            <div class="card-icon-wrap mx-auto mb-2"><i class="fas fa-graduation-cap"></i></div>
+            <p style="font-size:.85rem;font-weight:700;color:var(--merah-gelap);">Ruang Rapat</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="text-center p-3">
+            <div class="card-icon-wrap mx-auto mb-2"><i class="fas fa-car-side"></i></div>
+            <p style="font-size:.85rem;font-weight:700;color:var(--merah-gelap);">Area Parkir</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="text-center p-3">
+            <div class="card-icon-wrap mx-auto mb-2"><i class="fas fa-wifi"></i></div>
+            <p style="font-size:.85rem;font-weight:700;color:var(--merah-gelap);">Wi-Fi Gratis</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="text-center p-3">
+            <div class="card-icon-wrap mx-auto mb-2"><i class="fas fa-video"></i></div>
+            <p style="font-size:.85rem;font-weight:700;color:var(--merah-gelap);">Live Streaming</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="text-center p-3">
+            <div class="card-icon-wrap mx-auto mb-2"><i class="fas fa-book-open"></i></div>
+            <p style="font-size:.85rem;font-weight:700;color:var(--merah-gelap);">Perpustakaan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /info -->
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: YAKIN
+════════════════════════════════════════════════════════════ -->
+<div class="page-section" id="yakin">
+
+  <div class="unit-hero">
+    <div class="container text-center">
+      <p style="color:var(--emas-gelap);font-family:'Cinzel',serif;letter-spacing:3px;font-size:.8rem;text-transform:uppercase;margin-bottom:.5rem;position:relative;z-index:1;">
+        <i class="fas fa-seedling me-2"></i>Badan Usaha Gereja
+      </p>
+      <h1>Yayasan KINGMI Zaitun (YAKIN) Kota Jayapura</h1>
+      <p class="mt-2">Mengembangkan pendidikan, sosial, dan ekonomi untuk kesejahteraan jemaat dan masyarakat Papua</p>
+    </div>
+  </div>
+
+  <!-- Tentang YAKIN -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-6">
+          <span class="section-badge"><i class="fas fa-info me-2"></i>Tentang YAKIN</span>
+          <h2 class="section-title mt-2">Yayasan KINGMI Zaitun</h2>
+          <div class="section-underline" style="margin-left:0;"></div>
+          <p style="font-size:.93rem;line-height:1.8;color:#555;margin-bottom:1.5rem;">
+            Yayasan KINGMI Zaitun (YAKIN) adalah badan hukum nirlaba yang didirikan oleh BP. Jemaat KINGMI Zaitunu Apo. YAKIN bergerak dalam bidang pendidikan formal dan non-formal, pelayanan sosial kemasyarakatan, serta pemberdayaan ekonomi masyarakat Papua secara Kristiani.
+          </p>
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="info-highlight">
+                <h6><i class="fas fa-gavel me-2"></i>Status Hukum</h6>
+                <p>Berbadan Hukum – Terdaftar di Kemenkumham RI</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-highlight">
+                <h6><i class="fas fa-calendar me-2"></i>Didirikan</h6>
+                <p>Tahun 2023, Jayapura, Papua</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-highlight"> 
+                <h6><i class="fas fa-user-tie me-2"></i>Ketua Yayasan</h6>
+                <p>Bpk. Natan Waine, S.Kom</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-highlight">
+                <h6><i class="fas fa-map-pin me-2"></i>Sekretariat</h6>
+                <p>Jl. Raya Kotaraja, Abepura, Jayapura</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="yakin.png" alt="YAKIN" style="width:100%;border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,.12);" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Struktur Kepengurusan YAKIN -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-sitemap me-2"></i>Struktur</span>
+        <h2 class="section-title">Struktur Kepengurusan YAKIN</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi text-center">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <img src="yakin-ketua.jpg" alt="Ketua" style="width:80px;height:80px;object-fit:cover;border-radius:50%;border:4px solid var(--merah);margin-bottom:1rem;" />
+              <h5>Bpk. Natan Waine, S.Kom</h5>
+              <p style="color:var(--merah);font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:1px;">KETUA YAYASAN</p>
+              <p>Memimpin strategis dan pengembangan yayasan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi text-center">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <img src="yakin-sekretaris.jpg" alt="Sekretaris" style="width:80px;height:80px;object-fit:cover;border-radius:50%;border:4px solid var(--emas-gelap);margin-bottom:1rem;" />
+              <h5>Ibu. Maria Y. Kaisie, S.Pd</h5>
+              <p style="color:var(--merah);font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:1px;">SEKRETARIS</p>
+              <p>Mengelola administrasi dan dokumentasi yayasan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi text-center">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <img src="yakin-bendahara.jpg" alt="Bendahara" style="width:80px;height:80px;object-fit:cover;border-radius:50%;border:4px solid var(--emas-gelap);margin-bottom:1rem;" />
+              <h5>Bpk. Markus Y. Kogoya, SE</h5>
+              <p style="color:var(--merah);font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:1px;">BENDAHARA</p>
+              <p>Mengelola keuangan dan pelaporan keuangan yayasan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi text-center">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <img src="yakin-pengawas.jpg" alt="Pengawas" style="width:80px;height:80px;object-fit:cover;border-radius:50%;border:4px solid var(--emas-gelap);margin-bottom:1rem;" />
+              <h5>Bpk. Yulianus M. Edowai</h5>
+              <p style="color:var(--merah);font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:1px;">KETUA PENGAWAS</p>
+              <p>Memantau kinerja dan keuangan yayasan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 mt-3">
+        <div class="col-lg-12">
+          <h4 style="font-family:'Cinzel',serif;color:var(--emas);margin-bottom:1.5rem;text-align:center;"><i class="fas fa-users me-2"></i>Bidang Program</h4>
+          <div class="row g-3 justify-content-center">
+            <div class="col-6 col-md-3">
+              <div class="text-center p-3" style="background:rgba(139,0,0,.05);border-radius:8px;">
+                <h6 style="color:var(--merah-gelap);">Pendidikan</h6>
+                <p style="font-size:.8rem;color:#666;">Bpk. Yohan K. Wenda, M.Pd</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="text-center p-3" style="background:rgba(139,0,0,.05);border-radius:8px;">
+                <h6 style="color:var(--merah-gelap);">Sosial</h6>
+                <p style="font-size:.8rem;color:#666;">Ibu. Ratna D. Kogoya, S.Sos</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="text-center p-3" style="background:rgba(139,0,0,.05);border-radius:8px;">
+                <h6 style="color:var(--merah-gelap);">Ekonomi</h6>
+                <p style="font-size:.8rem;color:#666;">Bpk. Herman J. Kaisie, SE</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="text-center p-3" style="background:rgba(139,0,0,.05);border-radius:8px;">
+                <h6 style="color:var(--merah-gelap);">Kesehatan</h6>
+                <p style="font-size:.8rem;color:#666;">Dr. Frida Y. Kogoya</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sejarah YAKIN -->
+  <section class="section-wrapper" style="background:#fff;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-history me-2"></i>Sejarah</span>
+        <h2 class="section-title">Sejarah Berdirinya YAKIN</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-12">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h5>2015 – Inisiatif Pemberdayaan</h5>
+                <p>BP. Jemaat KINGMI Zaitun APO mulai menggagas pembentukan badan usaha gereja untuk memberdayakan ekonomi jemaat dan masyarakat Papua.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h5>2018 – Pembentukan Organisasi</h5>
+                <p>Dibentuklah tim persiapan yayasan yang terdiri dari majelis jemaat dan tokoh-tokoh masyarakat untuk merancang struktur dan program yayasan.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h5>2020 – Pandemi & Transformasi</h5>
+                <p>Di tengah pandemi COVID-19, yayasan tetap aktif memberikan bantuan sosial dan mengembangkan program pendidikan jarak jauh.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h5>2023 – Pendirian Resmi</h5>
+                <p>Yayasan KINGMI Zaitun (YAKIN) secara resmi didirikan dan mendapatkan pengesahan badan hukum dari Kementerian Hukum dan HAM RI.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h5>2024 – Ekspansi Program</h5>
+                <p>YAKIN memperluas program pendidikan dengan membuka TK dan SD Kristen KINGMI, serta meningkatkan program Beasiswa Mahasiswa Papua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Struktur Kepengurusan YAKIN -->
+  <section class="section-wrapper dark">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-layer-group me-2"></i>Unit Kerja</span>
+        <h2 class="section-title">Bidang Kegiatan YAKIN</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi dark-card">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-school"></i></div>
+              <h5>Pendidikan Formal</h5>
+              <p>Mengelola TK, SD, dan SMP Kristen KINGMI Zaitun yang memberikan pendidikan berkualitas berbasis iman Kristen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi dark-card">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-award"></i></div>
+              <h5>Beasiswa</h5>
+              <p>Program beasiswa bagi pelajar dan mahasiswa berprestasi dari keluarga kurang mampu di seluruh Papua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi dark-card">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-heartbeat"></i></div>
+              <h5>Pelayanan Kesehatan</h5>
+              <p>Klinik dan posyandu yang memberikan layanan kesehatan dasar bagi jemaat dan masyarakat sekitar gereja.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi dark-card">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-tractor"></i></div>
+              <h5>Pemberdayaan Ekonomi</h5>
+              <p>Pelatihan keterampilan, pertanian, dan usaha mikro untuk memberdayakan ekonomi jemaat secara mandiri.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program YAKIN -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-tasks me-2"></i>Program</span>
+        <h2 class="section-title">Program Unggulan YAKIN 2025</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="program-item">
+            <div class="prog-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <h6>Beasiswa Mahasiswa Papua Berprestasi</h6>
+              <p>Memberikan beasiswa penuh bagi 50 mahasiswa Papua di berbagai perguruan tinggi tahun 2025.</p>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="prog-icon"><i class="fas fa-tools"></i></div>
+            <div>
+              <h6>Pelatihan Vokasional & Keterampilan</h6>
+              <p>Pelatihan menjahit, komputer, dan kerajinan tangan bagi kaum perempuan jemaat di Jayapura.</p>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="prog-icon"><i class="fas fa-book-reader"></i></div>
+            <div>
+              <h6>Perpustakaan Komunitas KINGMI</h6>
+              <p>Membangun perpustakaan komunitas dengan koleksi buku rohani, pendidikan, dan umum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="program-item">
+            <div class="prog-icon"><i class="fas fa-medkit"></i></div>
+            <div>
+              <h6>Bakti Sosial Kesehatan Gratis</h6>
+              <p>Pemeriksaan kesehatan gratis bulanan bagi lansia dan anak-anak di lingkungan gereja.</p>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="prog-icon"><i class="fas fa-seedling"></i></div>
+            <div>
+              <h6>Pertanian Organik Jemaat</h6>
+              <p>Pengembangan lahan pertanian organik untuk ketahanan pangan dan penghasilan tambahan jemaat.</p>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="prog-icon"><i class="fas fa-home"></i></div>
+            <div>
+              <h6>Bedah Rumah Keluarga Tidak Mampu</h6>
+              <p>Program renovasi dan pembangunan rumah layak huni bagi keluarga miskin jemaat di Papua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA YAKIN -->
+  <div style="background:linear-gradient(135deg,var(--merah-gelap),var(--merah));padding:4rem 0;text-align:center;">
+    <div class="container">
+      <h3 style="font-family:'Cinzel',serif;color:var(--emas);margin-bottom:1rem;">Dukung Program YAKIN</h3>
+      <p style="color:rgba(255,245,200,.8);margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto;">
+        Bergabunglah dengan kami dalam mewujudkan Papua yang lebih sejahtera melalui pendidikan dan pemberdayaan.
+      </p>
+      <a href="#" class="btn-hero-primary" data-goto="kontak"><i class="fas fa-envelope me-2"></i>Hubungi YAKIN</a>
+    </div>
+  </div>
+
+</div><!-- /yakin -->
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: KOPERASI
+════════════════════════════════════════════════════════════ -->
+<div class="page-section" id="koperasi">
+
+  <div class="unit-hero">
+    <div class="container text-center">
+      <p style="color:var(--emas-gelap);font-family:'Cinzel',serif;letter-spacing:3px;font-size:.8rem;text-transform:uppercase;margin-bottom:.5rem;position:relative;z-index:1;">
+        <i class="fas fa-handshake me-2"></i>Badan Usaha Ekonomi
+      </p>
+      <h1>KSU Kingmi Zaitun Bertumbuh</h1>
+      <p class="mt-2">Koperasi Serba Usaha yang melayani dan memberdayakan ekonomi anggota jemaat di Kota Jayapura</p>
+    </div>
+  </div>
+
+  <!-- Profil KSU -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-6">
+          <img src="koperasi.png" alt="KSU" style="width:100%;border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,.12);" />
+        </div>
+        <div class="col-lg-6">
+          <span class="section-badge"><i class="fas fa-info me-2"></i>Profil KSU</span>
+          <h2 class="section-title mt-2">KSU Kingmi Zaitun Bertumbuh</h2>
+          <div class="section-underline" style="margin-left:0;"></div>
+          <p style="font-size:.93rem;line-height:1.8;color:#555;margin-bottom:1.5rem;">
+            Koperasi Serba Usaha (KSU) Kingmi Zaitun Bertumbuh adalah koperasi primer yang didirikan oleh anggota jemaat 
+            GKIP KINGMI Zaitun APO di Kota Jayapura. KSU ini bergerak dalam berbagai bidang usaha untuk meningkatkan kesejahteraan 
+            anggota melalui prinsip koperasi: gotong royong, kebersamaan, dan transparansi.
+          </p>
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="info-highlight">
+                <h6><i class="fas fa-id-card me-2"></i>Nomor Badan Hukum</h6>
+                <p>No. BH: 001/KSU/JAP/2005</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-highlight">
+                <h6><i class="fas fa-calendar me-2"></i>Didirikan</h6>
+                <p>Tahun 2005, Kota Jayapura</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-highlight">
+                <h6><i class="fas fa-user-tie me-2"></i>Ketua Koperasi</h6>
+                <p>Ibu Kristina Yogi, SE.,MM.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-highlight">
+                <h6><i class="fas fa-users me-2"></i>Jumlah Anggota</h6>
+                <p>± 250 Anggota Aktif (2025)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sejarah KSU -->
+  <section class="section-wrapper" style="background:#fff;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-history me-2"></i>Sejarah</span>
+        <h2 class="section-title">Sejarah Berdirinya KSU</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-12">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h5>2005 – Awal Pendirian</h5>
+                <p>KSU Kingmi Zaitun Bertumbuh didirikan oleh sekelompok anggota jemaat KINGMI Zaitun APO dengan modal awal sebesar Rp 25.000.000 dan 45 anggota pendiri.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h5>2008 – Unit Pertama</h5>
+                <p>Membuka unit usaha pertama berupa Toko Sembako untuk memenuhi kebutuhan anggota dan jemaat dengan harga terjangkau.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h5>2012 – Ekspansi Unit Usaha</h5>
+                <p>Menambahkan unit Simpan Pinjam dan Unit Agribisnis ikan nila yang dikelola secara kelompok oleh anggota.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h5>2018 – Pertumbuhan Signifikan</h5>
+                <p>Total aset mencapai Rp 1,5 miliar dengan 180 anggota aktif. Membuka unit jasa kontraktor dan transportasi.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h5>2025 – Modernisasi</h5>
+                <p>Total aset mencapai Rp 2,45 miliar dengan 250 anggota. Mengembangkan unit jasa digital dan percetakan modern.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Struktur Kepengurusan KSU -->
+  <section class="section-wrapper dark">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-store me-2"></i>Unit Usaha</span>
+        <h2 class="section-title">Unit Usaha KSU</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card-kingmi dark-card">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-piggy-bank"></i></div>
+              <h5>Simpan Pinjam</h5>
+              <p>Unit simpan pinjam dengan bunga rendah dan bersaing, membantu anggota dalam kebutuhan finansial mendesak maupun pengembangan usaha.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-kingmi dark-card">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-store-alt"></i></div>
+              <h5>Toko Sembako</h5>
+              <p>Toko kebutuhan pokok yang menyediakan bahan makanan dan kebutuhan sehari-hari dengan harga terjangkau bagi anggota.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-kingmi dark-card">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-fish"></i></div>
+              <h5>Agribisnis & Perikanan</h5>
+              <p>Unit usaha budidaya ikan dan pertanian yang dikelola secara bersama-sama oleh anggota koperasi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-kingmi dark-card">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-hard-hat"></i></div>
+              <h5>Jasa Kontraktor</h5>
+              <p>Unit jasa konstruksi bangunan skala kecil dan menengah, memberikan lapangan kerja bagi anggota terampil.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-kingmi dark-card">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-truck"></i></div>
+              <h5>Jasa Transportasi</h5>
+              <p>Armada kendaraan angkutan barang dan penumpang yang dimiliki bersama untuk melayani kebutuhan anggota dan masyarakat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-kingmi dark-card">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <div class="card-icon-wrap"><i class="fas fa-laptop-code"></i></div>
+              <h5>Jasa Digital & Percetakan</h5>
+              <p>Layanan percetakan, fotokopi, dan jasa digital untuk dokumen administrasi, spanduk, dan kebutuhan gereja.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Struktur Kepengurusan KSU -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge"><i class="fas fa-sitemap me-2"></i>Struktur</span>
+        <h2 class="section-title">Struktur Kepengurusan KSU</h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi text-center">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <img src="koperasi-ketua.jpg" alt="Ketua" style="width:80px;height:80px;object-fit:cover;border-radius:50%;border:4px solid var(--merah);margin-bottom:1rem;" />
+              <h5>Ibu Kristina Yogi, SE.,MM.</h5>
+              <p style="color:var(--merah);font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:1px;">KETUA</p>
+              <p>Memimpin operasional dan strategis koperasi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi text-center">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <img src="koperasi-sekretaris.jpg" alt="Sekretaris" style="width:80px;height:80px;object-fit:cover;border-radius:50%;border:4px solid var(--emas-gelap);margin-bottom:1rem;" />
+              <h5>Bpk. Ferry M. Kogoya, SE</h5>
+              <p style="color:var(--merah);font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:1px;">SEKRETARIS</p>
+              <p>Mengelola administrasi dan kesekretariatan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi text-center">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <img src="koperasi-bendahara.jpg" alt="Bendahara" style="width:80px;height:80px;object-fit:cover;border-radius:50%;border:4px solid var(--emas-gelap);margin-bottom:1rem;" />
+              <h5>Ibu. Yanti K. Kaisie, SE</h5>
+              <p style="color:var(--merah);font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:1px;">BENDAHARA</p>
+              <p>Mengelola keuangan dan laporan keuangan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-kingmi text-center">
+            <div class="card-header-bar"></div>
+            <div class="card-body">
+              <img src="koperasi-pengawas.jpg" alt="Pengawas" style="width:80px;height:80px;object-fit:cover;border-radius:50%;border:4px solid var(--emas-gelap);margin-bottom:1rem;" />
+              <h5>Bpk. Semuel J. Edowai</h5>
+              <p style="color:var(--merah);font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:1px;">KETUA PENGAWAS</p>
+              <p>Mengawasi kinerja dan pengelolaan keuangan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 mt-3">
+        <div class="col-lg-12">
+          <h4 style="font-family:'Cinzel',serif;color:var(--emas);margin-bottom:1.5rem;text-align:center;"><i class="fas fa-layer-group me-2"></i>Pengurus Unit Usaha</h4>
+          <div class="row g-3 justify-content-center">
+            <div class="col-6 col-md-2">
+              <div class="text-center p-3" style="background:rgba(139,0,0,.05);border-radius:8px;">
+                <h6 style="color:var(--merah-gelap);font-size:.85rem;">Simpan Pinjam</h6>
+                <p style="font-size:.75rem;color:#666;">Ibu. Meri Kogoya</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="text-center p-3" style="background:rgba(139,0,0,.05);border-radius:8px;">
+                <h6 style="color:var(--merah-gelap);font-size:.85rem;">Toko Sembako</h6>
+                <p style="font-size:.75rem;color:#666;">Bpk. Lukas Wenda</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="text-center p-3" style="background:rgba(139,0,0,.05);border-radius:8px;">
+                <h6 style="color:var(--merah-gelap);font-size:.85rem;">Agribisnis</h6>
+                <p style="font-size:.75rem;color:#666;">Bpk. Adolf Kaisie</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="text-center p-3" style="background:rgba(139,0,0,.05);border-radius:8px;">
+                <h6 style="color:var(--merah-gelap);font-size:.85rem;">Kontraktor</h6>
+                <p style="font-size:.75rem;color:#666;">Bpk. Rico Kogoya</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="text-center p-3" style="background:rgba(139,0,0,.05);border-radius:8px;">
+                <h6 style="color:var(--merah-gelap);font-size:.85rem;">Transportasi</h6>
+                <p style="font-size:.75rem;color:#666;">Bpk. Johan Edowai</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="text-center p-3" style="background:rgba(139,0,0,.05);border-radius:8px;">
+                <h6 style="color:var(--merah-gelap);font-size:.85rem;">Jasa Digital</h6>
+                <p style="font-size:.75rem;color:#666;">Bpk. Natan Waine</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHU & Keanggotaan -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <span class="section-badge"><i class="fas fa-chart-bar me-2"></i>Kinerja</span>
+          <h2 class="section-title mt-2">Laporan SHU 2024</h2>
+          <div class="section-underline" style="margin-left:0;"></div>
+          <div class="table-responsive jadwal-table">
+            <table class="table mb-0">
+              <thead>
+                <tr>
+                  <th>Keterangan</th>
+                  <th>Jumlah (Rp)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Total Aset KSU</td><td><strong>2.450.000.000</strong></td></tr>
+                <tr><td>Total SHU 2024</td><td><strong>180.500.000</strong></td></tr>
+                <tr><td>SHU per Anggota (rata-rata)</td><td><strong>401.111</strong></td></tr>
+                <tr><td>Dana Cadangan</td><td><strong>36.100.000</strong></td></tr>
+                <tr><td>Dana Sosial Gereja</td><td><strong>18.050.000</strong></td></tr>
+                <tr><td>Dana Pendidikan</td><td><strong>9.025.000</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <span class="section-badge"><i class="fas fa-user-plus me-2"></i>Keanggotaan</span>
+          <h2 class="section-title mt-2">Cara Menjadi Anggota</h2>
+          <div class="section-underline" style="margin-left:0;"></div>
+          <div class="program-item">
+            <div class="prog-icon"><i class="fas fa-file-alt"></i></div>
+            <div><h6>1. Isi Formulir Pendaftaran</h6><p>Kunjungi sekretariat KSU dan isi formulir pendaftaran anggota baru.</p></div>
+          </div>
+          <div class="program-item">
+            <div class="prog-icon"><i class="fas fa-coins"></i></div>
+            <div><h6>2. Simpanan Pokok</h6><p>Bayar simpanan pokok sebesar Rp 500.000 (sekali seumur hidup keanggotaan).</p></div>
+          </div>
+          <div class="program-item">
+            <div class="prog-icon"><i class="fas fa-calendar-check"></i></div>
+            <div><h6>3. Simpanan Wajib</h6><p>Bayar simpanan wajib Rp 50.000 per bulan setiap bulan aktif.</p></div>
+          </div>
+          <div class="program-item">
+            <div class="prog-icon"><i class="fas fa-id-card-alt"></i></div>
+            <div><h6>4. Terima Kartu Anggota</h6><p>Dapatkan kartu anggota dan mulai nikmati semua layanan dan manfaat KSU.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /koperasi -->
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: KONTAK
+════════════════════════════════════════════════════════════ -->
+<div class="page-section" id="kontak">
+
+  <div class="unit-hero">
+    <div class="container text-center">
+      <p style="color:var(--emas-gelap);font-family:'Cinzel',serif;letter-spacing:3px;font-size:.8rem;text-transform:uppercase;margin-bottom:.5rem;position:relative;z-index:1;">
+        <i class="fas fa-envelope me-2"></i>Hubungi Kami
+      </p>
+      <h1>Kontak &amp; Lokasi</h1>
+      <p class="mt-2">Kami siap melayani dan menjawab setiap pertanyaan Anda</p>
+    </div>
+  </div>
+
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Info Kontak -->
+        <div class="col-lg-4">
+          <div class="kontak-card mb-4">
+            <h5 style="font-family:'Cinzel',serif;color:var(--emas);margin-bottom:1.5rem;padding-bottom:.75rem;border-bottom:1px solid rgba(255,215,0,.2);">
+              <i class="fas fa-address-book me-2"></i>Informasi Kontak
+            </h5>
+            <div class="kontak-info-item">
+              <div class="kontak-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h6>Alamat Gereja</h6>
+                <p>Jl. Kabupaten 2 APO Gudang Keselamatan No. 1, Jayapura Utara, Kota Jayapura, Papua 99351</p>
+              </div>
+            </div>
+            <div class="kontak-info-item">
+              <div class="kontak-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h6>Telepon</h6>
+                <p>+62 967-5XXXXX / +62 812-XXXXXXXX</p>
+              </div>
+            </div>
+            <div class="kontak-info-item">
+              <div class="kontak-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h6>Email</h6>
+                <p>info@kingmi-zaitun.org<br/>admin@kingmi-zaitun.org</p>
+              </div>
+            </div>
+            <div class="kontak-info-item">
+              <div class="kontak-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h6>Jam Kantor</h6>
+                <p>Senin – Jumat: 08.00 – 16.00 WITA<br/>Sabtu: 08.00 – 12.00 WITA</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kontak Badan Usaha -->
+          <div style="background:#fff;border-radius:8px;padding:1.5rem;border:1px solid #f0e8e8;box-shadow:0 2px 12px rgba(0,0,0,.06);">
+            <h6 style="font-family:'Cinzel',serif;color:var(--merah-gelap);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:2px solid var(--emas);font-size:.85rem;letter-spacing:1px;">
+              <i class="fas fa-building me-2"></i>KONTAK BADAN USAHA
+            </h6>
+            <p style="font-size:.83rem;font-weight:700;color:var(--merah);margin-bottom:2px;"><i class="fas fa-seedling me-1"></i>YAKIN</p>
+            <p style="font-size:.82rem;color:#666;margin-bottom:1rem;">+62 812-XXXXXXXX · yakin@kingmi-zaitun.org</p>
+            <p style="font-size:.83rem;font-weight:700;color:var(--merah);margin-bottom:2px;"><i class="fas fa-handshake me-1"></i>KSU Kingmi Bertumbuh</p>
+            <p style="font-size:.82rem;color:#666;margin-bottom:0;">+62 821-XXXXXXXX · ksu@kingmi-zaitun.org</p>
+          </div>
+        </div>
+
+        <!-- Form Kontak -->
+        <div class="col-lg-8">
+          <div style="background:#fff;border-radius:8px;padding:2.5rem;box-shadow:0 4px 24px rgba(0,0,0,.07);">
+            <h4 style="font-family:'Cinzel',serif;color:var(--merah-gelap);margin-bottom:.5rem;">Kirim Pesan</h4>
+            <p style="font-size:.85rem;color:#888;margin-bottom:2rem;">Isi formulir di bawah ini dan kami akan segera merespons Anda.</p>
+            <div id="alertBox"></div>
+            <form id="kontakForm" class="form-kingmi">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nama">Nama Lengkap *</label>
+                  <input type="text" id="nama" class="form-control" placeholder="Masukkan nama lengkap Anda" />
+                </div>
+                <div class="col-md-6">
+                  <label for="telp">No. Telepon</label>
+                  <input type="tel" id="telp" class="form-control" placeholder="+62 ..." />
+                </div>
+                <div class="col-md-6">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" class="form-control" placeholder="email@anda.com" />
+                </div>
+                <div class="col-md-6">
+                  <label for="tujuan">Ditujukan Kepada</label>
+                  <select id="tujuan" class="form-select">
+                    <option value="">-- Pilih --</option>
+                    <option>Gembala Jemaat</option>
+                    <option>Majelis Gereja</option>
+                    <option>Sekretariat Gereja</option>
+                    <option>YAKIN</option>
+                    <option>KSU Kingmi Bertumbuh</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="subjek">Subjek *</label>
+                  <input type="text" id="subjek" class="form-control" placeholder="Subjek pesan Anda" />
+                </div>
+                <div class="col-12">
+                  <label for="pesan">Pesan *</label>
+                  <textarea id="pesan" class="form-control" rows="5" placeholder="Tulis pesan Anda di sini..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-submit w-100">
+                    <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Peta Lokasi placeholder -->
+      <div class="mt-5">
+        <h4 style="font-family:'Cinzel',serif;color:var(--merah-gelap);margin-bottom:1.5rem;text-align:center;">
+          <i class="fas fa-map-marked-alt me-2"></i>Lokasi Gereja
+        </h4>
+        <div style="width:100%;height:350px;background:linear-gradient(135deg,#f5e6e6,#fdf0d0);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:2px dashed var(--emas-gelap);">
+          <i class="fas fa-map-marker-alt" style="font-size:3rem;color:var(--merah);margin-bottom:1rem;"></i>
+          <p style="font-family:'Cinzel',serif;color:var(--merah-gelap);font-size:1rem;margin:0;">Jemaat KINGMI Zaitun APO Jayapura</p>
+          <p style="font-size:.85rem;color:#888;margin:.5rem 0 1.5rem;">Jl. Kabupaten 2 APO Gudang Keselamatan No. 1, Jayapura Utara, Kota Jayapura, Papua</p>
+          <a href="https://maps.google.com" target="_blank" class="btn-hero-primary" style="font-size:.8rem;padding:10px 24px;">
+            <i class="fas fa-external-link-alt me-2"></i>Buka di Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /kontak -->
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer id="main-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 footer-brand">
+        <img src="logo.png" alt="Logo KINGMI" id="footerLogo" />
+        <h5>Jemaat KINGMI Zaitun APO Kota Jayapura</h5>
+        <p>Gereja Kemah Injil (KINGMI) di Tanah Papua – Jemaat (KINGMI) Zaitun APO Kota Jayapura, Papua. Melayani Tuhan dengan segenap hati sejak 2006.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <h6 class="footer-title">Menu Utama</h6>
+        <ul class="footer-links">
+          <li><a data-goto="beranda"><i class="fas fa-chevron-right me-1" style="font-size:.65rem;color:var(--emas);"></i>Beranda</a></li>
+          <li><a data-goto="info"><i class="fas fa-chevron-right me-1" style="font-size:.65rem;color:var(--emas);"></i>Informasi</a></li>
+          <li><a data-goto="yakin"><i class="fas fa-chevron-right me-1" style="font-size:.65rem;color:var(--emas);"></i>YAKIN</a></li>
+          <li><a data-goto="koperasi"><i class="fas fa-chevron-right me-1" style="font-size:.65rem;color:var(--emas);"></i>Koperasi KSU</a></li>
+          <li><a data-goto="kontak"><i class="fas fa-chevron-right me-1" style="font-size:.65rem;color:var(--emas);"></i>Kontak</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h6 class="footer-title">Jadwal Ibadah</h6>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-clock me-1" style="font-size:.65rem;color:var(--emas);"></i>Minggu 08.00 – Ibadah Raya Pagi</a></li>
+          <li><a href="#"><i class="fas fa-clock me-1" style="font-size:.65rem;color:var(--emas);"></i>Minggu 15.00 – Ibadah Rutinitas Sore</a></li>
+          <li><a href="#"><i class="fas fa-clock me-1" style="font-size:.65rem;color:var(--emas);"></i>Senin 16.30 – Ibadah Rutinitas Pel. Perempuuan</a></li>
+          <li><a href="#"><i class="fas fa-clock me-1" style="font-size:.65rem;color:var(--emas);"></i>Selasa 17.00 – Doa Bersama</a></li>
+           <li><a href="#"><i class="fas fa-clock me-1" style="font-size:.65rem;color:var(--emas);"></i>Kamis 16.00 – Ibadah Keluarga</a></li>
+          <li><a href="#"><i class="fas fa-clock me-1" style="font-size:.65rem;color:var(--emas);"></i>Sabtu 16.00 – Rapat Majelis</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h6 class="footer-title">Kontak Kami</h6>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-map-marker-alt me-2" style="color:var(--emas);"></i>Jl. Kabupaten 2 APO Gudang Keselamatan No. 1, Jayapura</a></li>
+          <li><a href="#"><i class="fas fa-phone me-2" style="color:var(--emas);"></i>+62 967-5XXXXX</a></li>
+          <li><a href="#"><i class="fas fa-envelope me-2" style="color:var(--emas);"></i>info@kingmi-zaitun.org</a></li>
+          <li style="margin-top:.8rem;">
+            <span style="font-size:.75rem;color:rgba(255,245,200,.4);letter-spacing:1px;text-transform:uppercase;font-family:'Cinzel',serif;">Badan Usaha</span>
+          </li>
+          <li><a href="#"><i class="fas fa-seedling me-2" style="color:var(--emas);"></i>YAKIN: yakin@kingmi-zaitun.org</a></li>
+          <li><a href="#"><i class="fas fa-handshake me-2" style="color:var(--emas);"></i>KSU: ksu@kingmi-zaitun.org</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Jemaat KINGMI Zaitun, Kota Jayapura, Papua.<br/>
+      <span style="font-size:.72rem;">Sistem Informasi Pelayanan Jemaat | YAKIN | KSU Kingmi Zaitun Bertumbuh</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll To Top -->
+<div id="scrollTop"><i class="fas fa-chevron-up"></i></div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+<script>
+  // Theme Toggle
+  const themeToggle = document.getElementById('themeToggle');
+  const html = document.documentElement;
+  
+  // Load saved theme
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  html.setAttribute('data-theme', savedTheme);
+  updateThemeIcon(savedTheme);
+  
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+  });
+  
+  function updateThemeIcon(theme) {
+    const icon = themeToggle.querySelector('i');
+    if (theme === 'light') {
+      icon.className = 'fas fa-sun';
+    } else {
+      icon.className = 'fas fa-moon';
+    }
+  }
+</script>
+</body>
+</html>
